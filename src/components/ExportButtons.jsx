@@ -22,7 +22,7 @@ function ExportButtons({ contentRef, donnees, calculs }) {
         useCORS: true,
         logging: false,
         backgroundColor: '#ffffff'
-        
+
       })
 
       const imgData = canvas.toDataURL('image/png')
@@ -143,6 +143,7 @@ Document généré le ${new Date().toLocaleDateString('fr-FR')} à ${new Date().
           🖨️ Imprimer
         </button>
 
+        {/* Boutons désactivés en production pour éviter les modifications
         <button onClick={saveData} className="export-btn save-btn">
           💾 Sauvegarder
         </button>
@@ -150,6 +151,7 @@ Document généré le ${new Date().toLocaleDateString('fr-FR')} à ${new Date().
         <button onClick={loadData} className="export-btn load-btn">
           📂 Charger
         </button>
+        */}
       </div>
 
       <style jsx>{`
